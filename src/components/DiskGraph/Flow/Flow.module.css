@@ -1,0 +1,9 @@
+.disk-graph {
+  flex: 1 0 auto;
+  padding: 10px;
+  background: white;
+  height: 70vh;
+  border: solid 1px lightgray;
+  border-radius: 0.2rem;
+  margin: 20px;
+}
