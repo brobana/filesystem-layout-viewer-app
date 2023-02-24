@@ -1,0 +1,9 @@
+.physical-volume-node {
+  height: 80px;
+  width: 130px;
+  border: 1px solid #eee;
+  padding: 5px;
+  border-radius: 5px;
+  background: whitesmoke;
+  font-size: small;
+}

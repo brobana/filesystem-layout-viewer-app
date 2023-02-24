@@ -1,0 +1,77 @@
+.header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  background: rgb(40, 40, 40);
+  color: lightgray;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  height: 64px;
+}
+
+header {
+  padding: 0 20px;
+  width: 1100px;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+}
+
+.container > * {
+  padding: 20px;
+  flex: 1 100%;
+}
+
+.container main {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+a:hover {
+  color: rgba(0, 128, 0, 0.7);
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  background: white;
+  width: 100%;
+}
+
+main h1,
+h2,
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+main ol li,
+ul li {
+  margin: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  background: lightgray;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+
+@media screen and (min-width: 1100px) {
+  .container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
