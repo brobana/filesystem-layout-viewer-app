@@ -10,11 +10,11 @@
   flex-flow: row wrap;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: rgb(40, 40, 40);
   font-size: 1.6em;
   padding-bottom: 0.2em;
 }
 
 .logo a:hover {
-  color: rgba(144, 238, 144, 0.6);
+  color: rgb(40, 40, 40);
 }

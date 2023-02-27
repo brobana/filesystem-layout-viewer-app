@@ -6,15 +6,15 @@ const Notes = () => {
       <h2>Notes</h2>
       <ul>
         <li>
-          For more information about the above shell script, refer to this{' '}
+          Refer to this{' '}
           <a
             href="https://github.com/brobana/shell-scripts#get_disk_infopy"
             target="_blank"
             rel="noreferrer"
           >
-            ReadMe
-          </a>
-          .
+            link
+          </a>{' '}
+          for more information about the above shell script.
         </li>
         <li>
           Only LINUX operating systems managed by Logical Volume Manager
