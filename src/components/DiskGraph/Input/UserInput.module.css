@@ -14,8 +14,8 @@
 .flex-item-label > textarea {
   flex: 1;
   background: white;
-  border: 1px solid lightgray;
-  border-radius: 0.2rem;
+  border: 1px solid rgba(211, 211, 211, 0.5);
+  border-radius: 0.4rem;
   margin-bottom: 2rem;
   padding: 0.3rem;
 }

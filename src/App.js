@@ -6,12 +6,12 @@ import Usage from './components/Sections/Usage';
 import Notes from './components/Sections/Notes';
 import TextInput from './components/Sections/TextInput';
 import Diagram from './components/Sections/Diagram';
-import { defaultData } from './components/DiskGraph/Flow/DefaultData';
+import { sampleData } from './components/DiskGraph/Flow/SampleData';
 
 import classes from './App.module.css';
 
 const App = () => {
-  const [volumeData, setVolumeData] = useState(defaultData);
+  const [volumeData, setVolumeData] = useState(sampleData);
   const [resetView, setResetView] = useState(true);
 
   const updateDataHandler = (newVal) => {
@@ -46,22 +46,25 @@ const App = () => {
           />
           <Diagram volumeData={volumeData} resetView={resetView} />
         </main>
-        <footer>
-          &copy; 2023. A proof of concept by&nbsp;
+      </div>
+      <footer>
+        &copy; 2023. A proof of concept by&nbsp;
+        <div>
           <a href="https://www.bryanobana.com" target="_blank" rel="noreferrer">
             Bryan Obaña
           </a>
-          . View source code on GitHub&nbsp;
-          <AiFillGithub
-            size="1.5em"
-            onClick={onClickHandler(
-              'https://github.com/brobana/filesystem-layout-viewer-app'
-            )}
-            style={{ cursor: 'pointer' }}
-          />
-          .
-        </footer>
-      </div>
+          .&nbsp;
+        </div>
+        View source code on GitHub&nbsp;
+        <AiFillGithub
+          size="1.5em"
+          onClick={onClickHandler(
+            'https://github.com/brobana/filesystem-layout-viewer-app'
+          )}
+          style={{ cursor: 'pointer' }}
+        />
+        .
+      </footer>
     </Fragment>
   );
 };

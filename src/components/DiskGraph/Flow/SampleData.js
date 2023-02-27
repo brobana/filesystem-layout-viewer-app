@@ -1,5 +1,5 @@
-export const defaultData = () => {
-  const defaultData = {
+export const sampleData = () => {
+  return {
     volumeGroups: [
       {
         name: 'tstappvg',
@@ -60,5 +60,4 @@ export const defaultData = () => {
       },
     ],
   };
-  return defaultData;
 };

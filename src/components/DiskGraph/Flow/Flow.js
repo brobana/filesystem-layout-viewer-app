@@ -33,7 +33,7 @@ const Flow = (props) => {
 
   const onConnect = useCallback(
     (params) => setEdges((els) => addEdge(params, els)),
-    []
+    [setEdges]
   );
 
   useEffect(() => {
@@ -46,12 +46,12 @@ const Flow = (props) => {
     });
 
     return () => {};
-  }, [props.volumeData]);
+  }, [props.volumeData, setEdges, setNodes]);
 
   useEffect(() => {
     if (props.resetView) fitView();
     return () => {};
-  }, [nodes, edges]);
+  }, [nodes, edges, fitView, props.resetView]);
 
   return (
     <div className={classes['disk-graph']}>
@@ -66,6 +66,7 @@ const Flow = (props) => {
         attributionPosition="bottom-right"
         preventScrolling={false}
         zoomOnScroll={false}
+        nodesDraggable={false}
       >
         <Controls position="top-right" showInteractive={false} />
       </ReactFlow>
